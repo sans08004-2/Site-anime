@@ -40,6 +40,7 @@
 #esquerda:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: rgba(97, 97, 97, 0.4) 5px 5px, rgba(97, 97, 97, 0.3) 10px 10px, rgba(97, 97, 97, 0.2) 15px 15px, rgba(97, 97, 97, 0.1) 20px 20px, rgba(97, 97, 97, 0.05) 25px 25px;
+  /* se n gosto dos box shadow abre o site e ve um melhor ai https://getcssscan.com/css-box-shadow-examples */
 }
 #direita {
   right: 0;
