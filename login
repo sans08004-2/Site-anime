@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnime</title>
+</head>
+<body>
+    <center>
+    <form method="post">
+    <input type="nome" id="nome" name="nome" placeholder="Coloque seu nome"><br><br>
+    <input type="nome" id="senha" name="ssenha" placeholder="Coloque seu nome"><br><br>
+    <button type="submit">Logar</button>
+    <p class="link">
+        Não tem uma conta? faça seu <a href="cadastro.html">Cadastro</a>
+    </p>
+</center>
+</form>
+</body>
+</html>
