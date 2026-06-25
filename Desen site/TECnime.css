@@ -6,13 +6,13 @@
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #a5a5a5;
+  background-color: #21152eb0;
 }
 li {
   list-style: none;
 }
 nav {
-  background-color: #333;
+  background-color: #20132ee8;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -86,10 +86,10 @@ nav ul.Menu {
   padding: 0;
 }
 .menulat2 {
-  background: #333;
+  background: #20132ee8;
   width: 180px;
   padding: 20px 0;
-  border-bottom: 8px solid #555;
+  border-bottom: 8px solid #392f42b4;
 }
 .menulat2 ul {
   display: flex;
@@ -111,6 +111,40 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #724c9c7a;
+  color: white;
+  padding: 20px;
+}
+input#nome,
+input#email,
+input[type="submit"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -196,8 +230,9 @@ nav ul li a {
 }
 .novidades {
   margin: 0px;
+
   padding: 0px;
-  background-color: #bebebe;
+  background-color: #21152e79;
   border-radius: 8px;
   text-align: center;
   height: fit-content;
