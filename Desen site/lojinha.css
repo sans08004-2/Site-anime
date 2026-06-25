@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #21152eb0;
+}
+li {
+  list-style: none;
+}
+nav {
+  background-color: #20132ee8;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Logo{
+  flex: 1;
+}
+div.Logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+nav ul.Pesquisa {
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.Pesquisa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pesquisa input {
+    padding: 5px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    padding-left: 10px;
+}
+
+.Pesquisa button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 0px;
+  border: none;
+  height: 35px;
+  width: 40px;
+}
+.Pesquisa img {
+  padding: 0px;
+  margin-left: 0px;
+  width: 18px;
+  height: 18px;
+}
+nav ul.Menu {
+  padding: 5px;
+  font-size: 10px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 20px;
+
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.loja{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.produto{
+    background:#724c9c7a;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+    text-align:center;
+}
+
+.produto img{
+    width:100%;
+    border-radius:10px;
+}
+
+.produto button{
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.carrinho{
+    background:#20132ee8;
+    color:white;
+    width:300px;
+    position:fixed;
+    right:0;
+    top:65px;
+    padding:20px;
+    display:none;
+    max-height:500px;
+    overflow-y:auto;
+}
+
+.carrinho ul{
+    display:block;
+}
+
+.carrinho li{
+    margin:10px 0;
+}
+.titulo-categoria{
+    color: white;
+    margin: 30px 50px 15px;
+}
+
+.carrossel-produtos{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:20px;
+}
+
+.lista-produtos{
+    display:flex;
+    gap:20px;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    width:100%;
+}
+
+.produto{
+    min-width:250px;
+    background:#724c9c7a;
+    padding:20px;
+    border-radius:10px;
+    color:white;
+    text-align:center;
+}
+
+.produto img{
+    width:100%;
+    border-radius:10px;
+}
+
+.produto button{
+    margin-top:10px;
+    padding:10px;
+    cursor:pointer;
+}
+
+.carrossel-produtos button{
+    height:50px;
+    width:50px;
+    font-size:24px;
+    cursor:pointer;
+}
+.botaoCarrinho img {
+  padding: 0px;
+  margin-left: 0px;
+  width: 18px;
+  height: 18px;
+}
