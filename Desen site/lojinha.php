@@ -27,7 +27,7 @@ if(!isset($_SESSION['usuario'])){
     <button onclick="finalizarCompra()">Finalizar compra</button>
     </div>
     <nav>
-        <div class="Logo"><a href="TECnime.html">Logo</a></div>
+        <div class="Logo"><a href="TECnime.php">Logo</a></div>
 
         <ul class="Pesquisa">
             <input type="text" placeholder="Pesquisa">
@@ -50,11 +50,7 @@ if(!isset($_SESSION['usuario'])){
 <h1 class="titulo-categoria">Action Figures</h1>
 
 <div class="carrossel-produtos">
-
-    <button class="voltar">&#10094;</button>
-
     <div class="lista-produtos">
-
         <div class="produto">
             <img src="https://placehold.co/200x200" alt="">
             <h2>Naruto</h2>
@@ -63,49 +59,26 @@ if(!isset($_SESSION['usuario'])){
                 <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="Adicionar ao carrinho">
             </button>
         </div>
-
-        <div class="produto">
-            <img src="https://placehold.co/200x200" alt="">
-            <h2>Sasuke</h2>
-            <p>R$ 79,90</p>
-            <button onclick="adicionarcarrinho('Sasuke',79.90)">
+            <div class="produto">
+                <img src="https://placehold.co/200x200" alt="">
+                <h2>Goku</h2>
+                <p>R$ 89,90</p>
+                <button onclick="adicionarcarrinho('Goku',89.90)">
                 <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="Adicionar ao carrinho">
             </button>
-        </div>
-
-        <div class="produto">
-            <img src="https://placehold.co/200x200" alt="">
-            <h2>Itachi</h2>
-            <p>R$ 89,90</p>
-            <button onclick="adicionarcarrinho('Itachi',89.90)">
-                <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="Adicionar ao carrinho">
-            </button>
-        </div>
-
-        <div class="produto">
-            <img src="https://placehold.co/200x200" alt="">
-            <h2>Kakashi</h2>
-            <p>R$ 84,90</p>
-            <button onclick="adicionarcarrinho('Kakashi',84.90)">
-                <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="Adicionar ao carrinho">
-            </button>
-        </div>
-
+            </div>
     </div>
-
-    <button class="avancar">&#10095;</button>
-
+    <div class="botoes">
+        <button id="voltar">&#10094;</button>
+        <button id="avancar">&#10095;</button>
+    </div>
 </div>
 
 
 <h1 class="titulo-categoria">Mangás</h1>
 
 <div class="carrossel-produtos">
-
-    <button class="voltar">&#10094;</button>
-
     <div class="lista-produtos">
-
         <div class="produto">
             <img src="https://placehold.co/200x200" alt="">
             <h2>One Piece Vol. 1</h2>
@@ -132,11 +105,11 @@ if(!isset($_SESSION['usuario'])){
                 <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="Adicionar ao carrinho">
             </button>
         </div>
-
     </div>
-
-    <button class="avancar">&#10095;</button>
-
+    <div class="botoes">
+        <button id="voltar">&#10094;</button>
+        <button id="avancar">&#10095;</button>
+    </div>
 </div>
     <div vw class="enabled">
     <div vw-access-button class="active"></div>

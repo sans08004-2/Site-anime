@@ -5,6 +5,12 @@ const divcarrinho = document.getElementById("carrinho");
 const listacarrinho = document.getElementById("listacarrinho");
 const total = document.getElementById("total");
 const contador = document.getElementById("contadorcarrinho");
+const voltar = document.getElementById("voltar");
+const avancar = document.getElementById("avancar");
+const carrossel = document.querySelector('.lista-produtos');
+const nprodutos = Array.from(carrossel.children);
+let scroll = 0;
+
 if (abrircarrinho && divcarrinho) {
     abrircarrinho.addEventListener("click", (e) => {
         e.preventDefault();
@@ -69,4 +75,24 @@ function finalizarCompra(){
 
     carrinho = [];
     atualizarcarrinho();
+}
+avancar.addEventListener('click', () => {
+    scroll++;
+    if (scroll >= nprodutos.length) {
+        scroll = nprodutos.length - 1;
+    }
+
+    updateCarousel();
+});
+voltar.addEventListener('click', () => {
+    scroll--;
+    if (scroll < 0) {
+        scroll = 0;
+    }
+    
+    updateCarousel();
+});
+function updateCarousel() {
+    const largura = nprodutos[0].getBoundingClientRect().width;
+    carrossel.style.transform = `translateX(-${largura * scroll}px)`;
 }

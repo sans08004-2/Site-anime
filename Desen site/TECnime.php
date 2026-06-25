@@ -23,16 +23,16 @@ session_start();
             </button>
             </ul>
             <ul class="Menu">
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html"><?php if (empty($_SESSION['usuario'])) { echo 'Login'; } else { echo $_SESSION['usuario']; } ?></a></li>
             </ul>
         </nav>
     </header>
 <div class="menulat">
     <aside class="menulat2">
         <ul>
-            <li><a href="TECnime.html">Home</a></li>
-            <li><a href="lojinha.html">Loja</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="TECnime.php">Home</a></li>
+            <li><a href="lojinha.php">Loja</a></li>
+            <li><a href="contato.php">Contato</a></li>
             </ul>
     </aside>
 
@@ -55,8 +55,8 @@ session_start();
   <button id="esquerda">&#10094;</button>
   <button id="direita">&#10095;</button>
         </div>
-      </div>
-      </div>
+    </div>
+</div>
 <div class="novidades">
 <H1>TECnime novidades</H1>
 <h3>Confira as últimas novidades do TECnime!</h3>

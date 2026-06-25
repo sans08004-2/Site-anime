@@ -3,17 +3,20 @@ const fotos = Array.from(carrossel.children);
 const proximo = document.getElementById('direita');
 const antes = document.getElementById('esquerda');
 let scroll = 0;
+
 proximo.addEventListener('click', () => {
-    if (scroll < fotos.length - 1) {
-        scroll++;
-        updateCarousel();
-    }
+    scroll++;
+    scroll %= fotos.length;
+
+    updateCarousel();
 });
 antes.addEventListener('click', () => {
-    if (scroll > 0) {
-        scroll--;
-        updateCarousel();
+    scroll--;
+    if (scroll < 0) {
+        scroll = fotos.length - 1;
     }
+    
+    updateCarousel();
 });
 function updateCarousel() {
     const largura = fotos[0].getBoundingClientRect().width;
