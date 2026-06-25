@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,17 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnime</title>
     <link rel="stylesheet" href="TECnimelogin.css">
+    
 </head>
 
 <body>
-    <form method="post">
-        <input type="text" id="nome" name="nome" placeholder="Coloque seu nome" max="50"><br><br>
-        <input type="varchar" id="senha" name="ssenha" placeholder="Coloque sua senha" max="100" min="5"><br><br>
-        <button type="submit">Logar</button>
+        <header>
+    
+        <nav>
+            <div class="Logo"><a href="TECnime.html">Logo</a></div>
+            <ul class="Pesquisa">
+
+                <input type="text" placeholder="Pesquisa">
+            <button type="submit">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Pesquisar">
+            </button>
+            </ul>
+            <ul class="Menu">
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contato">
+        <h1>Login</h1>
+    <form method="post" action="login.php">
+        <input type="text" class="nome" id="nome" name="nome" placeholder="Coloque seu nome" max="50"><br><br>
+        <input type="password" class="senha" id="senha" name="senha" placeholder="Coloque sua senha" max="100" min="5"><br><br>
+        <button class="btn" type="submit">Logar</button>
         <p class="link">
             Não tem uma conta? faça seu <a href="cadastro.html">Cadastro</a>
         </p>
     </form>
-</body>
+    </div>
+    <!--o css tbm deu problema igual o do cadastro ent eu coloquei essa gambuiarra aq-->
+    <style>
+        input.nome, input.senha {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+button.btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
 
+input.senha{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+input.nome{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+
+    </style>
+</body>
 </html>
