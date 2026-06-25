@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECnime</title>
-    <link rel="stylesheet" href="TECnime.css">
+    <link rel="stylesheet" href="../style/TECnime.css">
 </head>
 <body>
     <header>
@@ -62,7 +62,7 @@ session_start();
 <h3>Confira as últimas novidades do TECnime!</h3>
 <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
 </div>
-<script src="TECnime.js"></script>
+<script src="../script/TECnime.js"></script>
 
 <div vw class="enabled">
     <div vw-access-button class="active"></div>

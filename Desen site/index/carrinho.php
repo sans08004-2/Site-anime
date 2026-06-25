@@ -11,7 +11,7 @@ if(!isset($_SESSION['usuario'])){
 <head>
     <meta charset="UTF-8">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="lojinha.css">
+    <link rel="stylesheet" href="../style/lojinha.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@ if(!isset($_SESSION['usuario'])){
     <button onclick="finalizarCompra()">Finalizar compra</button>
 </div>
 
-<script src="carrinho.js"></script>
+<script src="../script/carrinho.js"></script>
 
 </body>
 </html>
