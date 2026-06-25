@@ -9,17 +9,52 @@
 </head>
 
 <body>
-    <form method="post">
+        <header>
+        
+        <nav>
+            <div class="Logo"><a href="TECnime.html">Logo</a></div>
+            <ul class="Pesquisa">
+
+                <input type="text" placeholder="Pesquisa">
+            <button type="submit">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Pesquisar">
+            </button>
+            </ul>
+            <ul class="Menu">
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contato">
+        <h1>Cadastro</h1>
+    <form method="post" action="Cadastro.php">
         <input type="text" id="nome" name="nome" placeholder="Coloque seu nome" max="50"><br><br>
-        <input type="varchar" id="email" name="gmail" placeholder="Qual seu E-mail" max="50"></main><br><br>
-        <input type="number" id="numero" name="tel" placeholder="Seu numero de telefone" min="11" max="14"><br><br>
-        <input type="varchar" id="senha" name="ssenha" placeholder="Crie uma senha" max="100" min="5"><br><br>
-        <input type="varchar" id="senha2" name="ssenha2" placeholder="Confirme sua senha" max="100" min="5"><br><br>
+        <input type="email" id="email" name="email" placeholder="Qual seu E-mail" max="50"></main><br><br>
+        <input type="password" id="senha" name="senha" placeholder="Crie uma senha" max="100" min="5"><br><br>
+        <input type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" max="100" min="5"><br><br>
         <button type="submit">Criar</button>
         <p>
             Ja tem uma conta? Entre <a href="login.html">login</a>
         </p>
     </form>
+    </div>
+    <!--eu coloquei um style aq pq por algum motivo quando eu coloquei no xamp parte do css paro de funciona ent vai gambiarra-->
+    <style>
+input#nome,
+input#email,
+input#numero,
+input#senha,
+input#senha2,
+button[type="submit"]
+{ 
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+} 
+    </style>
 </body>
 
 </html>
