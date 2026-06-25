@@ -1,21 +1,21 @@
-const aaaa = document.querySelector('.carrossell');
-const fts = Array.from(aaaa.children);
+const carrossel = document.querySelector('.carrossell');
+const fotos = Array.from(carrossel.children);
 const proximo = document.getElementById('direita');
 const antes = document.getElementById('esquerda');
-let ftsaaa = 0;
+let scroll = 0;
 proximo.addEventListener('click', () => {
-    if (ftsaaa < fts.length - 1) {
-        ftsaaa++;
+    if (scroll < fotos.length - 1) {
+        scroll++;
         updateCarousel();
     }
 });
 antes.addEventListener('click', () => {
-    if (ftsaaa > 0) {
-        ftsaaa--;
+    if (scroll > 0) {
+        scroll--;
         updateCarousel();
     }
 });
 function updateCarousel() {
-    const slideWidth = fts[0].getBoundingClientRect().width;
-    aaaa.style.transform = `translateX(-${slideWidth * currentSlideIndex}px)`;
+    const largura = fotos[0].getBoundingClientRect().width;
+    carrossel.style.transform = `translateX(-${largura * scroll}px)`;
 }
