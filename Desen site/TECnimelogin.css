@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #21152eb0;
+}
+li {
+  list-style: none;
+}
+nav {
+  background-color: #20132ee8;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Logo{
+  flex: 1;
+}
+div.Logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+nav ul.Pesquisa {
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.Pesquisa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pesquisa input {
+    padding: 5px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    padding-left: 10px;
+}
+
+.Pesquisa button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 0px;
+  border: none;
+  height: 35px;
+  width: 40px;
+}
+.Pesquisa img {
+  padding: 0px;
+  margin-left: 0px;
+  width: 18px;
+  height: 18px;
+}
+nav ul.Menu {
+  padding: 5px;
+  font-size: 10px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 20px;
+
+}
+.menulat {
+  justify-content: center;
+  margin-top: 0;
+  display: flex;
+  gap: 0;
+  padding: 0;
+}
+.menulat2 {
+  background: #333;
+  width: 180px;
+  padding: 20px 0;
+  border-bottom: 8px solid #555;
+}
+.menulat2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menulat2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #724c9c7a;
+  color: white;
+  padding: 20px;
+}
+
+button.btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+
+input.senha{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+input.nome{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+div.contato input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #271c337a;
+  color: white;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #724c9c7a;
+  color: white;
+  padding: 20px;
+}
