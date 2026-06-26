@@ -60,7 +60,33 @@ session_start();
 <div class="novidades">
 <H1>TECnime novidades</H1>
 <h3>Fique por dentro de todas as atualizações do universo geek e descubra os melhores produtos no TECnime.</h3>
-<p>lore ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
+<div class="novidades">
+    <h1>TECnime novidades</h1>
+    <h3>Fique por dentro de todas as atualizações do universo geek e descubra os melhores produtos no TECnime.</h3>
+
+    <h2>Últimas Novidades do Mundo Geek</h2>
+
+    <h3>Animes</h3>
+    <p>Mushoku Tensei: Jobless Reincarnation - 3ª Temporada (Julho 2026)</p>
+    <p>The Elusive Samurai - 2ª Temporada (Julho 2026)</p>
+    <p>BLACK TORCH (Julho 2026)</p>
+    <p>JoJo's Bizarre Adventure: Steel Ball Run (Março 2026)</p>
+    <p>Dorohedoro - 2ª Temporada (Abril 2026)</p>
+
+    <h3>Mangás</h3>
+    <p>One Piece - Novo volume previsto para julho de 2026.</p>
+    <p>Chainsaw Man - Continuação semanal.</p>
+    <p>Blue Box - Novos capítulos em publicação.</p>
+    <p>Kagurabachi - Novos capítulos semanais.</p>
+    <p>Dandadan - Continuação do arco atual.</p>
+
+    <h3>Action Figures</h3>
+    <p>Monkey D. Luffy - Gear 5</p>
+    <p>Satoru Gojo - Hollow Purple</p>
+    <p>Sung Jin-Woo</p>
+    <p>Denji</p>
+    <p>Frieren</p>
+</div>
 </div>
 <script src="../script/TECnime.js"></script>
 
