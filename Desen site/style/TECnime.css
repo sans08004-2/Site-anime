@@ -10,13 +10,15 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #21152eb0;
+  background-color: #20132e;
+  opacity: 1;
 }
 li {
   list-style: none;
 }
 nav {
-  background-color: #20132ee8;
+  background-color: #20132e;
+  opacity: 1;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -88,12 +90,13 @@ nav ul.Menu {
   display: flex;
   gap: 0;
   padding: 0;
+  align-items: flex-start;
 }
 .menulat2 {
   background: #20132ee8;
   width: 180px;
   padding: 20px 0;
-  border-bottom: 8px solid #392f42b4;
+  border-bottom: 0px solid #392f42b4;
 }
 .menulat2 ul {
   display: flex;
@@ -144,17 +147,6 @@ textarea {
   color: white;
 }
 
-.carrossel {
-  flex:1;
-  width: 600px;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-}
 .carrossell {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -164,12 +156,9 @@ textarea {
 }
 .carrosselll img {
   display: block;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 400px;
-  width: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 .carrossel {
   flex:1;
@@ -180,7 +169,11 @@ textarea {
   align-items: center;
   text-align: center;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  height: 500px;
+
+
+  margin: 0;
 }
 .carrossel button {
   position: absolute;
@@ -226,7 +219,7 @@ textarea {
 }
 .novidades {
   padding: 20px;
-  background-color: #21152e79;
+  background-color: #2c1247c9;
   border-radius: 8px;
   text-align: center;
   min-height: calc(100vh - 460px);

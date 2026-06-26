@@ -39,16 +39,16 @@ session_start();
     <div class="carrossel">
         <div class="carrossell">
             <div class="carrosselll">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY3_ABG_0BppTfB_k9jdMCyZ0nTV-_MJeXg&s" alt="1">
+                <img src="../img/wppskilluadef.jpg" alt="1">
             </div>
             <div class="carrosselll">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY3_ABG_0BppTfB_k9jdMCyZ0nTV-_MJeXg&s" alt="2">
+                <img src="../img/wppsladef.jpg" alt="2">
             </div>
             <div class="carrosselll">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY3_ABG_0BppTfB_k9jdMCyZ0nTV-_MJeXg&s" alt="3">
+                <img src="../img/wppevedefa.jpg" alt="3">
             </div>
             <div class="carrosselll">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY3_ABG_0BppTfB_k9jdMCyZ0nTV-_MJeXg&s" alt="4">
+                <img src="../img/p5wp.png" alt="4">
             </div>
         </div>
         <div class="botoes">
@@ -59,7 +59,7 @@ session_start();
 </div>
 <div class="novidades">
 <H1>TECnime novidades</H1>
-<h3>Confira as últimas novidades do TECnime!</h3>
+<h3>Fique por dentro de todas as atualizações do universo geek e descubra os melhores produtos no TECnime.</h3>
 <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
 </div>
 <script src="../script/TECnime.js"></script>

@@ -86,13 +86,14 @@ $resultado = $conexao->query($sql);
     <ul class="Menu">
         <li><a href="anunciar.php">Anunciar Produto</a></li>
 
-        <li><a href="#"><?= $_SESSION['usuario'] ?></a></li>
+        <li><a href="login.html"><?= isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Login' ?></a></li>
 
         <li>
+            <div class="btncarrin">
             <a href="#" class="botaoCarrinho" onclick="abrirCarrinho(event)">
                 <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png">(
                     <?php 
-                        $totalItens = 0;
+                        $totalItens =0;
 
                         if(!empty($_SESSION['carrinho'])){
                             foreach($_SESSION['carrinho'] as $item){
@@ -103,6 +104,7 @@ $resultado = $conexao->query($sql);
 echo $totalItens;
 ?>)
             </a>
+            </div>
         </li>
     </ul>
 </nav>
@@ -116,7 +118,7 @@ echo $totalItens;
         <img src="<?= $produto['imagem'] ?>" alt="">
 
         <h2><?= $produto['nome'] ?></h2>
-
+        <h3><?= $produto['descricao'] ?></h3>
         <p>R$ <?= number_format($produto['preco'],2,",",".") ?></p>
 
         <form method="POST">
@@ -146,53 +148,49 @@ echo $totalItens;
     <?php } ?>
 
     <?php if(!empty($_SESSION['carrinho'])): ?>
-    <?php foreach($_SESSION['carrinho'] as $id => $item){ ?>
-    <div>
-        <h4><?= $item['nome'] ?></h4>
-        <p><?= $item['qtd'] ?>x R$ <?= number_format($item['preco'],2,",",".") ?></p>
-    </div>
-<?php } ?>
 
-    <div class="item-carrinho">
-        <img src="<?= $item['imagem'] ?>" width="60">
+        <?php foreach($_SESSION['carrinho'] as $id => $item){ ?>
 
-        <div>
-            <h4><?= $item['nome'] ?></h4>
+            <div class="item-carrinho">
+                <img src="<?= $item['imagem'] ?>" width="60">
 
-            <p>
-                R$ <?= number_format($item['preco'],2,",",".") ?>
-                <?php if(isset($item['qtd'])) echo " x ".$item['qtd']; ?>
-            </p>
+                <div>
+                    <h4><?= $item['nome'] ?></h4>
 
-        </div>
+                    <p>
+                        R$ <?= number_format($item['preco'],2,",",".") ?>
+                        <?php if(isset($item['qtd'])) echo " x ".$item['qtd']; ?>
+                    </p>
+                </div>
+
+                <form method="POST">
+                    <input type="hidden" name="index" value="<?= $id ?>">
+                    <button name="remove" type="submit">X</button>
+                </form>
+            </div>
+
+            <?php
+                $qtd = $item['qtd'] ?? 1;
+                $total += $item['preco'] * $qtd;
+            ?>
+
+        <?php } ?>
+
+        <hr>
+
+        <h2>Total: R$ <?= number_format($total,2,",",".") ?></h2>
+
         <form method="POST">
-            <input type="hidden" name="index" value="<?= $id ?>">
-            <button name="remove" type="submit">X</button>
+            <button type="submit" name="finalizar">
+                Finalizar compra
+            </button>
         </form>
 
-    </div>
-
-    <?php
-        $qtd = $item['qtd'] ?? 1;
-        $total += $item['preco'] * $qtd;
-    ?>
-    
-
-    <hr>
-
-    <h2>Total: R$ <?= number_format($total,2,",",".") ?></h2>
-
-    <form method="POST">
-        <button onclick="alert('Compra finalizada!')">
-    Finalizar compra</button>
-    </form>
     <?php endif; ?>
-</div>
 
 </div>
 
 </div>
-
 <script src="../script/carrinho.js"></script>
 
 </body>

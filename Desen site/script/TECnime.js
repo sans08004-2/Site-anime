@@ -1,24 +1,24 @@
 const carrossel = document.querySelector('.carrossell');
-const fotos = Array.from(carrossel.children);
+const fotos = document.querySelectorAll('.carrosselll');
 const proximo = document.getElementById('direita');
 const antes = document.getElementById('esquerda');
 let scroll = 0;
-
-proximo.addEventListener('click', () => {
+function updateCarousel() {
+    const largura = fotos[0].clientWidth;
+    carrossel.style.transform = `translateX(-${largura * scroll}px)`;
+}
+function proximaImagem() {
     scroll++;
-    scroll %= fotos.length;
-
+    if (scroll >= fotos.length) {
+        scroll = 0;
+    }
     updateCarousel();
-});
+}
+proximo.addEventListener('click', proximaImagem);
 antes.addEventListener('click', () => {
     scroll--;
     if (scroll < 0) {
         scroll = fotos.length - 1;
     }
-    
     updateCarousel();
 });
-function updateCarousel() {
-    const largura = fotos[0].getBoundingClientRect().width;
-    carrossel.style.transform = `translateX(-${largura * scroll}px)`;
-}

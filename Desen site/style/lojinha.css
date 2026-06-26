@@ -121,7 +121,7 @@ nav ul li a {
 
 .carrinho{
     background:#20132ee8;
-    color:white;
+    color:black;
     width:300px;
     position:fixed;
     right:0;
@@ -172,13 +172,23 @@ nav ul li a {
     padding:10px;
     cursor:pointer;
 }
-
-
+.botaoCarrinho {
+  color: black;
+  background-color: #c592ffd8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .botaoCarrinho img {
+  color:black;
   padding: 0px;
   margin-left: 0px;
   width: 18px;
   height: 18px;
+  display:block;
 }
 .Pesquisa input {
     padding: 5px;
@@ -307,11 +317,12 @@ nav ul li a {
     margin: 30px;
     padding: 20px;
     background: #20132ee8;
-    color: white;
+    color: black;
     border-radius: 10px;
 }
 
 .item-carrinho{
+  color: black;
     display: flex;
     gap: 10px;
     align-items: center;
