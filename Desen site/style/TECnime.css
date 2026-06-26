@@ -225,11 +225,11 @@ textarea {
   background: rgba(0, 0, 0, 0.8);
 }
 .novidades {
-
-  padding: 0px;
+  padding: 20px;
   background-color: #21152e79;
   border-radius: 8px;
   text-align: center;
-  height: 100%;
+  min-height: calc(100vh - 460px);
   width: 100%;
+  color: white;
 }

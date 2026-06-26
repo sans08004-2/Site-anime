@@ -144,12 +144,6 @@ nav ul li a {
     margin: 30px 50px 15px;
 }
 
-.carrossel-produtos{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin:20px;
-}
 
 .lista-produtos{
     display:flex;
@@ -179,12 +173,7 @@ nav ul li a {
     cursor:pointer;
 }
 
-.carrossel-produtos button{
-    height:50px;
-    width:50px;
-    font-size:24px;
-    cursor:pointer;
-}
+
 .botaoCarrinho img {
   padding: 0px;
   margin-left: 0px;
@@ -254,4 +243,122 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+.anunciar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.lista-produtos button{
+    height:50px;
+    width:50px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.lista-produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.produto button{
+    height:50px;
+    width:50px;
+    font-size:24px;
+    cursor:pointer;
+}
+.lista-produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto{
+    background: #724c9c7a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.produto img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrinho-container{
+    margin: 30px;
+    padding: 20px;
+    background: #20132ee8;
+    color: white;
+    border-radius: 10px;
+}
+
+.item-carrinho{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:999;
+}
+
+.modal-content{
+    background:#20132ee8;
+    color:white;
+    width:420px;
+    max-height:80vh;
+    overflow-y:auto;
+    margin:80px auto;
+    padding:20px;
+    border-radius:10px;
+}
+
+.close{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.item-carrinho{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin:10px 0;
+}
+.item-carrinho button{
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.item-carrinho button:hover{
+    transform: scale(1.2);
 }

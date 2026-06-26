@@ -31,3 +31,18 @@ function finalizarCompra(){
     atualizar();
 }
 atualizar();
+function abrirCarrinho(e){
+    e.preventDefault();
+    document.getElementById("modalCarrinho").style.display = "block";
+}
+
+function fecharCarrinho(){
+    document.getElementById("modalCarrinho").style.display = "none";
+}
+
+window.onclick = function(event){
+    let modal = document.getElementById("modalCarrinho");
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}

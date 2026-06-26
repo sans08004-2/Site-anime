@@ -96,3 +96,31 @@ function updateCarousel() {
     const largura = nprodutos[0].getBoundingClientRect().width;
     carrossel.style.transform = `translateX(-${largura * scroll}px)`;
 }
+document.querySelectorAll(".carrossel-produtos").forEach(carrossel => {
+
+    const lista = carrossel.querySelector(".lista-produtos");
+    const voltar = carrossel.querySelector(".voltar");
+    const avancar = carrossel.querySelector(".avancar");
+
+    avancar.addEventListener("click", () => {
+        lista.scrollLeft += 300;
+    });
+
+    voltar.addEventListener("click", () => {
+        lista.scrollLeft -= 300;
+    });
+
+});
+function adicionarCarrinho(id){
+
+    fetch("carrinho_add.php", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: "id=" + id
+    })
+    .then(res => res.text())
+    .then(() => {
+        alert("Produto adicionado ao carrinho!");
+    });
+
+}

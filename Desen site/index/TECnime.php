@@ -14,7 +14,7 @@ session_start();
     <header>
         
         <nav>
-            <div class="Logo"><a href="TECnime.html">Logo</a></div>
+            <div class="Logo"><a href="TECnime.php">Logo</a></div>
             <ul class="Pesquisa">
 
                 <input type="text" placeholder="Pesquisa">

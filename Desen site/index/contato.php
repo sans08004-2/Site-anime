@@ -23,7 +23,7 @@ session_start();
             </button>
             </ul>
             <ul class="Menu">
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html"><?php if (empty($_SESSION['usuario'])) { echo 'Login'; } else { echo $_SESSION['usuario']; } ?></a></li>
             </ul>
         </nav>
     </header>
