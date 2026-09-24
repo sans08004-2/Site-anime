@@ -1,24 +1,24 @@
 <?php
-
-include "conexao.php";
 session_start();
+include "conexao.php";
 
-$nome = $_POST['nome'];
-$senha = $_POST['senha'];
+$email = $_POST['nome'] ?? '';   
+$senha = $_POST['senha'] ?? '';
 
-$sql = "SELECT * FROM usuarios
-        WHERE nome='$nome' AND senha='$senha'";
+$stmt = $conexao->prepare("SELECT nome, senha FROM usuarios WHERE email = ?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$resultado = $stmt->get_result();
 
-$resultado = $conexao->query($sql);
+while ($usuario = $resultado->fetch_assoc()) {
+    $ok = password_verify($senha, $usuario['senha'])  
+       || $senha === $usuario['senha'];               
 
-if ($resultado->num_rows > 0) {
-
-    $_SESSION['usuario'] = $nome;
-    header("Location: lojinha.php");
-    exit;
-
-} else {
-    echo "login errado";
+    if ($ok) {
+        $_SESSION['usuario'] = $usuario['nome'];
+        header("Location: lojinha.php");
+        exit;
+    }
 }
 
-?>
+echo "login errado";
